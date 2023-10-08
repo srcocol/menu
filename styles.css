@@ -1,13 +1,42 @@
 /* Estilos generales */
-body {
-  margin: 0;
+:root {
+  --rojo: #C13135;
+  --amarillo: #eb9832;
+}
+* {
+  box-sizing: border-box;
   padding: 0;
+  margin: 0;
+}
+html {
   font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 62.5%;
+  color: black;
+}
+
+h1 {
+  font-size: 5.2rem;
+  line-height: 79px;
+}
+h2 {
+  font-size: 3.0rem;
+  line-height: 45px;
+}
+p {
+  font-size: 1.8rem;
+  line-height: 22px;
+}
+li {
+  font-size: 2.2rem;
+  line-height: 27px;
+  list-style: none;
 }
 
 /* Estilos del header */
 header {
-  background-color: #eb9832;
+  background-color: var(--amarillo);
   color: black;
   display: flex;
   justify-content: space-between;
@@ -18,7 +47,8 @@ header {
   right: 0;
   z-index: 1000;
   padding: 10px 20px;
-  height: 40px;
+  height: 75px;
+  font-size: 2.0rem;
 }
 
 .logo img {
@@ -45,59 +75,10 @@ nav a {
 /* Estilos del contenido principal */
 main {
   background-image: url(./Images/background.jpg);
+  margin-top: 75px;
 }
 
-.background-image {
-  position: relative;
-  text-align: center;
-  height: 100vh;
-  overflow: hidden;
-}
 
-.background-image img {
-  width: 90%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.centered img {
-  width: 400px; /* Ajusta el tamaño del logo central según tus necesidades */
-
-  display: flex;
-
-}
-
-.btn-menu {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #eb9832;
-  color: black;
-  text-decoration: none;
-  font-size: large;
-  border-radius: 5px;
-  margin-top: 20px;
-}
-
-/* Estilos para la sección de contenido libre */
-.contenido-libre {
-  /* Agrega estilos según tus necesidades */
-}
 
 footer {
   background-color: #eb9832;
@@ -105,6 +86,7 @@ footer {
   flex-direction: column;
   align-items: center;
   padding: 10px 10px;
+  font-size: 1.5rem;
 }
 
 footer section {
@@ -116,6 +98,7 @@ footer section {
 footer section div{
   display: flex;
   width: 50%;
+  justify-content: space-around;
 }
 .domicilio ul {
   list-style: none;
