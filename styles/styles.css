@@ -64,7 +64,7 @@ header {
 .hamburger-menu div {
   width: 30px;
   height: 3px;
-  background-color: #fff;
+  background-color: black;
   margin: 3px 0;
 }
 
@@ -119,7 +119,7 @@ nav a {
 
 /* Estilos del contenido principal */
 main {
-  background-image: url(./Images/background.jpg);
+  background-image: url(../Images/background.jpg);
   margin-top: 75px;
 }
 

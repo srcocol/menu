@@ -19,7 +19,9 @@
 }
 @media (max-width: 1000px){
   main {
-    height: 85vh;
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
   }
   .background-image img {
     width: 100%;
