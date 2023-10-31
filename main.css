@@ -1,31 +1,17 @@
+main div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
 .background-image {
   position: relative;
   text-align: center;
-  height: 100vh;
-  overflow: hidden;
-}
-@media (max-width:1200px) {
-  .background-image {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-.background-image img {
   width: 90%;
-  height: auto;
 }
-@media (max-width: 1000px){
-  main {
-    height: 85vh;
-  }
-  .background-image img {
-    width: 100%;
-  }
+.background-image img {
+  width: 100%;
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -34,7 +20,6 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro */
 }
-
 .centered {
   position: absolute;
   top: 50%;
@@ -46,23 +31,70 @@
   align-items: center;
 }
 
-.centered img {
-  width: 400px; /* Ajusta el tamaño del logo central según tus necesidades */
-  display: flex;
-}
-@media (max-width:900px) {
-  .centered img {
-    width: 50%;
-  }
-}
 
-.btn-menu {
-  display: inline-block;
+.btn {
+  display: flex;
   padding: 10px 20px;
-  background-color: #eb9832;
+  background-color: var(--amarillo);
   color: black;
   text-decoration: none;
-  font-size: large;
   border-radius: 5px;
   margin-top: 20px;
+  font-size: 2.3rem;
+  text-align: center;
+  box-shadow: 0px 4px 0px 0px #C13135;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+.btn-menu {
+  width: 250px;
+  height: 70px;
+}
+
+.productos-estrella {
+  width: 80%;
+  text-align: center;
+}
+
+.productos-estrella section {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+.productos-estrella div {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 5px;
+}
+.circular {
+  display: inline-block;
+  position: relative;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular img {
+  width: auto;
+  height: 100%;
+  margin-left: -50px;
+}
+.btn-star {
+  margin-top: -20px;
+  z-index: 5;
+}
+@media (max-width: 700px) {
+  .background-image {
+    width: 100%;
+  }
+  .centered img {
+    width: 250px;
+  }
+  .productos-estrella section {
+    flex-direction: column;
+  }
 }
