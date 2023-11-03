@@ -18,6 +18,9 @@
   width: 400px;
 }
 @media (max-width:700px) {
+  .cocolaina-logo {
+    width: 180px;
+  }
   .images {
     grid-template-columns: 1fr;
   }
