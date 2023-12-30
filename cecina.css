@@ -73,7 +73,9 @@ main div {
   .centered img {
     width: 150px;
   }
-  
+  .whatsapp {
+    min-width: 200px;
+  }
 }
 @media (max-width:1100px) {
   .container {
