@@ -119,6 +119,9 @@ nav a {
     text-decoration: none;
     color: black;
   }
+  .lightbox-content {
+    width: 95%;
+  }
 }
 
 main {
@@ -178,9 +181,47 @@ footer img {
   .footer-right {
     width: 50%;
   }
+  .lightbox-content {
+    width: 90%;
+  }
 }
 @media (max-width:1100px) {
   body {
     overflow-x: hidden;
+  }
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9); /* Fondo oscuro */
+}
+
+.lightbox-content {
+  max-height: 90%;
+  margin: auto;
+  display: block;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (min-width: 800px) {
+  .lightbox-content {
+      max-width: 80%; /* Ajuste de ancho al 50% para pantallas de más de 1000px */
+  }
+}
+@media (min-width: 1000px) {
+  .lightbox-content {
+      max-width: 50%; /* Ajuste de ancho al 50% para pantallas de más de 1000px */
   }
 }

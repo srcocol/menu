@@ -96,5 +96,6 @@ main div {
   }
   .productos-estrella section {
     flex-direction: column;
+    align-items: center;
   }
 }
